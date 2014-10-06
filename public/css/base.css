@@ -1,0 +1,252 @@
+/*
+ * Layout
+ */
+
+body {
+	margin: 0;
+
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.container {
+	max-width: 960px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+}
+
+.row {
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	-webkit-justify-content: center;
+	justify-content: center;
+
+	margin-left: -20px;
+}
+
+.sm-1of1, .sm-1of2, .sm-1of3, .sm-2of3, .sm-1of4, .sm-3of4, .sm-1of5, .sm-2of5, .sm-3of5, .sm-4of5, .sm-1of6, .sm-5of6, .lg-1of1, .lg-1of2, .lg-1of3, .lg-2of3, .lg-1of4, .lg-3of4, .lg-1of5, .lg-2of5, .lg-3of5, .lg-4of5, .lg-1of6, .lg-5of6 {
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+
+.sm-fit {
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.sm-1of1 {
+	-webkit-flex: 0 0 100%;
+	flex: 0 0 100%;
+}
+
+.sm-1of2 {
+	-webkit-flex: 0 0 50%;
+	flex: 0 0 50%;
+}
+
+.sm-1of3 {
+	-webkit-flex: 0 0 33.33333333%;
+	flex: 0 0 50%;
+}
+
+.sm-2of3 {
+	-webkit-flex: 0 0 66.666666666%;
+	flex: 0 0 50%;
+}
+
+.sm-1of4 {
+	-webkit-flex: 0 0 25%;
+	flex: 0 0 50%;
+}
+
+.sm-3of4 {
+	-webkit-flex: 0 0 75%;
+	flex: 0 0 50%;
+}
+
+.sm-1of5 {
+	-webkit-flex: 0 0 20%;
+	flex: 0 0 50%;
+}
+
+.sm-2of5 {
+	-webkit-flex: 0 0 40%;
+	flex: 0 0 50%;
+}
+
+.sm-3of5 {
+	-webkit-flex: 0 0 60%;
+	flex: 0 0 50%;
+}
+
+.sm-4of5 {
+	-webkit-flex: 0 0 80%;
+	flex: 0 0 50%;
+}
+
+.sm-1of6 {
+	-webkit-flex: 0 0 16.666666666%;
+	flex: 0 0 50%;
+}
+
+.sm-5of6 {
+	-webkit-flex: 0 0 83.333333333%;
+	flex: 0 0 50%;
+}
+
+@media (min-width: 768px) {
+	.lg-fit {
+		-webkit-flex: 1;
+		flex: 1;
+	}
+
+	.lg-1of1 {
+		-webkit-flex: 0 0 100%;
+		flex: 0 0 100%;
+	}
+
+	.lg-1of2 {
+		-webkit-flex: 0 0 50%;
+		flex: 0 0 50%;
+	}
+
+	.lg-1of3 {
+		-webkit-flex: 0 0 33.33333333%;
+		flex: 0 0 50%;
+	}
+
+	.lg-2of3 {
+		-webkit-flex: 0 0 66.666666666%;
+		flex: 0 0 50%;
+	}
+
+	.lg-1of4 {
+		-webkit-flex: 0 0 25%;
+		flex: 0 0 50%;
+	}
+
+	.lg-3of4 {
+		-webkit-flex: 0 0 75%;
+		flex: 0 0 50%;
+	}
+
+	.lg-1of5 {
+		-webkit-flex: 0 0 20%;
+		flex: 0 0 50%;
+	}
+
+	.lg-2of5 {
+		-webkit-flex: 0 0 40%;
+		flex: 0 0 50%;
+	}
+
+	.lg-3of5 {
+		-webkit-flex: 0 0 60%;
+		flex: 0 0 50%;
+	}
+
+	.lg-4of5 {
+		-webkit-flex: 0 0 80%;
+		flex: 0 0 50%;
+	}
+
+	.lg-1of6 {
+		-webkit-flex: 0 0 16.666666666%;
+		flex: 0 0 50%;
+	}
+
+	.lg-5of6 {
+		-webkit-flex: 0 0 83.333333333%;
+		flex: 0 0 50%;
+	}
+
+	.lg-hidden {
+		display: none;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.sm-hidden {
+		display: none;
+	}
+}
+
+/*
+ * Typography
+ */
+
+:root {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+p {
+	line-height: 1.4rem;
+}
+
+a, a:hover, a:visited {
+	color: #06F;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.subtle, a.subtle:hover, a.subtle:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+label {
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+button, input {
+	font-family: inherit;
+}
+
+/*
+ * UI
+ */
+
+button, input[type="submit"] {
+	background: #FFF;
+	border: 1px solid #AAA;
+	border-radius: 4px;
+	font-size: 1rem;
+	padding: 0.4rem 0.8rem;
+}
+
+button:active, input[type="submit"]:active {
+	background: #EEE;
+	box-shadow: inset 0 0 0.4rem rgba(0, 0, 0, 0.2);
+}
