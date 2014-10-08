@@ -7,8 +7,8 @@ webboilerplate is the boilerplate I use for web apps I write in Go.
 * MVC
 * public file serving
 * optional template caching
-* sessions (via (Gorilla Toolkit)[http://www.gorillatoolkit.org])
-* logging with (logrus)[https://github.com/Sirupsen/logrus]
+* sessions (via [Gorilla Toolkit](http://www.gorillatoolkit.org))
+* logging with [logrus](https://github.com/Sirupsen/logrus)
 
 ## Building & Running
 
