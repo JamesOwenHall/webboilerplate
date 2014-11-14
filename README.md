@@ -1,3 +1,6 @@
+**Deprecated**
+Yeah, this is project is overly complicated.  I wouldn't recommend using it.
+
 # webboilerplate
 
 webboilerplate is the boilerplate I use for web apps I write in Go.
